@@ -11,9 +11,7 @@ function somarValoresDosInputs(){
     const valorDois = Number(inputDois.value)
     const valorTres = Number(inputTres.value)
 
-    console.log(valorUm)
-    console.log(valorDois)
-    console.log(valorTres)
+
 
     const resultado = valorUm + valorDois + valorTres 
 
@@ -22,6 +20,20 @@ function somarValoresDosInputs(){
     const divResultado = document.getElementById ('divResultado')
     
     divResultado.innerText = resultado
+}
+
+function juntarNomes() {
+  var nome = document.getElementById("nome").value;
+  var sobrenome = document.getElementById("sobrenome").value;
+
+  if(nome && sobrenome) {
+    var nomeCompleto = nome + " " + sobrenome;
+    document.getElementById("nomeCompleto").textContent = "Nome completo = " + nomeCompleto
+  } else {
+    alert("Para exibir nome completo, você precisa digitar nome e sobrenome!");
+  }
+
+
 }
 
 
